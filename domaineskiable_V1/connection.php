@@ -1,5 +1,10 @@
 <?php
 session_start();
+if(isset($_SESSION["connecte"])){
+  // Pas besoin de se connecter à nouveau
+  header("Location: index.php");
+  exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -22,6 +27,11 @@ session_start();
     <h1>Connection</h1>
   </header>
   
+  <?php 
+  if(isset($_GET["erreur"]) && $_GET["erreur"]=="inconnu"){
+    echo "Login inconnu";
+  }
+   ?>
   
   <div class="row">
     <form class="col s12" method="POST" action="scripts/se_connecter.php">
