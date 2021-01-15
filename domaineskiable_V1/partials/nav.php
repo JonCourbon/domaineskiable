@@ -1,6 +1,6 @@
 <nav>
   <div class="nav-wrapper">
-    <a href="#" class="brand-logo"><img src="images/logo.png" alt="logo"></img></a>
+    <a href="index.php" class="brand-logo"><img src="images/logo.png" alt="logo"/></a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a href="pistes.php">Pistes</a></li>
       <li><a href="remontees.php">Remontées</a></li>
