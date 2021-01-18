@@ -15,8 +15,7 @@ include("partials/init.php");
   <link rel="stylesheet" media="screen" href="css/style.css">
   
 </head>
-<body>
-  
+<body class="<?php $classcouleurfond;?>">  
   <?php include('partials/nav.php'); ?>
   <header>
     <h1>PISTE: FreeRide1</h1>
