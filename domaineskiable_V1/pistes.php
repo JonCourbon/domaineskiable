@@ -1,3 +1,6 @@
+<?php
+include("partials/init.php");
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
