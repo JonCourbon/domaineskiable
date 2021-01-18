@@ -25,12 +25,18 @@ include("partials/init.php");
   <div class="row">
     <aside class="col s3">
       <section>
-        <h1>Menu</h1>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-        </ul>
-      </section>
+      <?php 
+      if($_SESSION["connecte"]=="ADMIN"){
+        echo "Vous êtes connecté en tant qu'admin";
+      }
+      else if($_SESSION["connecte"]=="MEMBRE"){
+          echo "Vous êtes connecté en tant que membre";
+        }
+        else{
+          echo "Vous n'êtes pas connecté. Pour se connecter: <a href=\"connection.php\">Connection</a>";
+        }
+       ?>
+       </section>
     </aside> 
     
     <section class="col s9">
