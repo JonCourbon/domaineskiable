@@ -1,5 +1,7 @@
 <?php
 include("partials/init.php");
+include("scripts/fonctions.php");
+$nbvisites=ajouterVisites();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -25,6 +27,7 @@ include("partials/init.php");
   <div class="row">
     <aside class="col s3">
       <section>
+        Nombre de visites de cette page: <?php echo $nbvisites;  ?> <br/>
       <?php 
       if($_SESSION["connecte"]=="ADMIN"){
         echo "Vous êtes connecté en tant qu'admin";
