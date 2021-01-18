@@ -26,36 +26,36 @@ include("partials/init.php");
       <section>
         <h1>Types</h1>
         <ul>
-          <li><a href="#alpin">Ski alpin</a></li>
-          <li><a href="#nordique">Ski nordique</a></li>
-          <li><a href="#raquettes">Raquettes</a></li>
+          <li><a href="#telepherique">Téléphériques</a></li>
+          <li><a href="#telesiege">Télésièges</a></li>
+          <li><a href="#teleski">Téléskis</a></li>
         </ul>
       </section>
     </aside> 
     
     <section class="col s9">
-      <article><a name="alpin"></a>
+      <article><a name="telepherique"></a>
         <header>
-          <h1>Ski alpin</h1>
+          <h1>Téléphériques</h1>
         </header>
         <section>
 
         </section>
       </article>
-      <article><a name="nordique"></a>
+      <article><a name="telesiege"></a>
         <header>
-          <h1>Ski nordique</h1>
+          <h1>Télésièges</h1>
         </header>
         <section>
-          This is the second article.
+          Les telesieges
         </section>
       </article>
-      <article><a name="raquettes"></a>
+      <article><a name="teleski"></a>
         <header>
-          <h1>Raquettes</h1>
+          <h1>Téléskis</h1>
         </header>
         <section>
-          This is the second article.
+          Les Téléskis
         </section>
       </article>
     </section>
