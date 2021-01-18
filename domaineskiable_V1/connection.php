@@ -50,6 +50,7 @@ if(isset($_SESSION["connecte"])){
             <input type="submit" class="btn waves-effect waves-light"  value="Se connecter" ></input>
         </div>
       </div>
+      (entrer "<b>admin</b>" comme mot de passe, respectivement "<b>membre</b>", pour être connecté avec le statut ADMIN resp. MEMBRE)
 
 
     </form>
