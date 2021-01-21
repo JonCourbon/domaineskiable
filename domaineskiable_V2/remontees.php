@@ -1,5 +1,7 @@
 <?php
 include("partials/init.php");
+include("fonctions.php");
+$tableauRemontees=listerRemontees();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -36,28 +38,19 @@ include("partials/init.php");
     <section class="col s9">
       <article><a name="telepherique"></a>
         <header>
-          <h1>Téléphériques</h1>
+          <h1></h1>
         </header>
         <section>
-
+          <ul>
+<?php 
+for($i=0;$i<count($tableauRemontees);$i++){
+  echo '<li>'.$tableauRemontees[$i]["nom"].'('.$tableauRemontees[$i]["type"].')</li>'."\n";
+}
+?>
+</ul>
         </section>
       </article>
-      <article><a name="telesiege"></a>
-        <header>
-          <h1>Télésièges</h1>
-        </header>
-        <section>
-          Les telesieges
-        </section>
-      </article>
-      <article><a name="teleski"></a>
-        <header>
-          <h1>Téléskis</h1>
-        </header>
-        <section>
-          Les Téléskis
-        </section>
-      </article>
+      
     </section>
     
     

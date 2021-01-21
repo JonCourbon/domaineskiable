@@ -29,13 +29,13 @@ $tableauPistesRaquette=listerPistes("raquette");
   <div class="row">
     <aside class="col s3">
       <section>
-            <h1>Types</h1>
-            <ul>
-                <li><a href="#alpin">Ski alpin</a></li>
-                <li><a href="#nordique">Ski nordique</a></li>
-                <li><a href="#raquettes">Raquettes</a></li>
-            </ul>
-        </section>
+        <h1>Types</h1>
+        <ul>
+          <li><a href="#alpin">Ski alpin</a></li>
+          <li><a href="#nordique">Ski nordique</a></li>
+          <li><a href="#raquettes">Raquettes</a></li>
+        </ul>
+      </section>
     </aside> 
     
     <section class="col s9">
@@ -49,7 +49,7 @@ $tableauPistesRaquette=listerPistes("raquette");
             for($i=0;$i<count($tableauPistesAlpin);$i++){
               echo '<dt><a href="piste.php?id='.$tableauPistesAlpin[$i]["id"].'"><span class="'.$tableauPistesAlpin[$i]["couleur"].'">'.$tableauPistesAlpin[$i]["nom"].'</span></a></dt>'."\n";
             }
-             ?>
+            ?>
           </dl>
         </section>
       </article>
@@ -57,13 +57,14 @@ $tableauPistesRaquette=listerPistes("raquette");
         <header>
           <h1>Ski nordique</h1>
         </header>
-        <dl>
-          <?php 
-          for($i=0;$i<count($tableauPistesNordique);$i++){
-            echo '<dt><a href="piste.php?id='.$tableauPistesNordique[$i]["id"].'"><span class="'.$tableauPistesNordique[$i]["type"].'">'.$tableauPistesNordique[$i]["nom"].'</span></a></dt>'."\n";
-          }
-           ?>
-        </dl>
+        <section>
+          <dl>
+            <?php 
+            for($i=0;$i<count($tableauPistesNordique);$i++){
+              echo '<dt><a href="piste.php?id='.$tableauPistesNordique[$i]["id"].'"><span class="'.$tableauPistesNordique[$i]["type"].'">'.$tableauPistesNordique[$i]["nom"].'</span></a></dt>'."\n";
+            }
+            ?>
+          </dl>
         </section>
       </article>
       <article><a name="raquettes"></a>
@@ -76,7 +77,7 @@ $tableauPistesRaquette=listerPistes("raquette");
             for($i=0;$i<count($tableauPistesRaquette);$i++){
               echo '<dt><a href="piste.php?id='.$tableauPistesRaquette[$i]["id"].'"><span class="'.$tableauPistesRaquette[$i]["type"].'">'.$tableauPistesRaquette[$i]["nom"].'</span></a></dt>'."\n";
             }
-             ?>
+            ?>
           </dl>
         </section>
       </article>

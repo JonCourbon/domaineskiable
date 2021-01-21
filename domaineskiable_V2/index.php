@@ -1,6 +1,6 @@
 <?php
 include("partials/init.php");
-include("scripts/fonctions.php");
+include("fonctions.php");
 $nbvisites=ajouterVisites();
 ?>
 <!DOCTYPE html>
