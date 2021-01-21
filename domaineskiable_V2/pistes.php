@@ -85,6 +85,42 @@ $tableauPistesRaquette=listerPistes("raquette");
     
     
   </div>
+  <?php if($_SESSION["connecte"]=="ADMIN"): ?>
+    
+    <div class="row">
+      <form class="col s12" method="POST" action="scripts/ajouterPiste.php">
+        <div class="row">
+          <div class="input-field col s6">
+              <input id="nom" name="nom" type="text" required="required">
+              <label for="nom">Nom*</label>
+          </div>            
+        </div>
+        <div class="row">
+            <select id="type" name="type">
+                <option value="alpin">Ski alpin</option>
+                <option value="nordique">Ski nordique</option>
+                <option value="raquette">Raquettes</option>
+            </select>
+            <select id="couleur" name="couleur">
+                <option value="vert">Vert</option>
+                <option value="rouge">Rouge</option>
+                <option value="noire">Noire</option>
+            </select>
+            <label for="couleur">Couleur</label>
+        </div>
+        <div class="row">
+          <div class="input-field">
+              <input type="submit" class="btn waves-effect waves-light"  value="Ajouter piste" ></input>
+          </div>
+        </div>
+
+
+
+      </form>
+    </div>    
+  <?php endif;?>
+  
+  
   <?php include('partials/footer.php'); ?>
   
   <!-- Import du Js de la librairie Materialize https://materializecss.com -->

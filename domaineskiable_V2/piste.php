@@ -2,7 +2,8 @@
 include("partials/init.php");
 
 include("fonctions.php");
-$piste=listerInformationsPiste($_GET["id"]);
+$id=$_GET["id"];
+$piste=listerInformationsPiste($id);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -27,13 +28,13 @@ $piste=listerInformationsPiste($_GET["id"]);
   <div class="row">
     <aside class="col s3">
       <section>
-            <h1>Autres pistes</h1>
-            <ul>
-                <li><a href="pistes.php#alpin">Ski alpin</a></li>
-                <li><a href="pistes.php#nordique">Ski nordique</a></li>
-                <li><a href="pistes.php#raquettes">Raquettes</a></li>
-            </ul>
-        </section>
+        <h1>Autres pistes</h1>
+        <ul>
+          <li><a href="pistes.php#alpin">Ski alpin</a></li>
+          <li><a href="pistes.php#nordique">Ski nordique</a></li>
+          <li><a href="pistes.php#raquettes">Raquettes</a></li>
+        </ul>
+      </section>
     </aside> 
     
     <section class="col s9">
@@ -45,6 +46,11 @@ $piste=listerInformationsPiste($_GET["id"]);
           Piste de type: <?php echo $piste["type"];?><br/>
           Couleur: <?php echo $piste["couleur"];?>
         </section>
+        <?php if($_SESSION["connecte"]=="ADMIN"): ?>
+          <footer>
+            <a href="scripts/supprimerPiste.php?id=<?php echo $id;?></a>">Supprimer piste</a>
+          </footer>
+        <?php endif;?>
       </article>
       
     </section>
