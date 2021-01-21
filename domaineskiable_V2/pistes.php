@@ -106,16 +106,12 @@ $tableauPistesRaquette=listerPistes("raquette");
                 <option value="rouge">Rouge</option>
                 <option value="noire">Noire</option>
             </select>
-            <label for="couleur">Couleur</label>
         </div>
         <div class="row">
           <div class="input-field">
               <input type="submit" class="btn waves-effect waves-light"  value="Ajouter piste" ></input>
           </div>
         </div>
-
-
-
       </form>
     </div>    
   <?php endif;?>

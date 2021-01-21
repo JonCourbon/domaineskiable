@@ -48,7 +48,7 @@ $piste=listerInformationsPiste($id);
         </section>
         <?php if($_SESSION["connecte"]=="ADMIN"): ?>
           <footer>
-            <a href="scripts/supprimerPiste.php?id=<?php echo $id;?></a>">Supprimer piste</a>
+            <a href="scripts/supprimerPiste.php?id=<?php echo $id;?>">Supprimer piste</a>
           </footer>
         <?php endif;?>
       </article>
